@@ -90,7 +90,8 @@ export class Service{
             return await this.tablesDB.listRows(
                 conf.appwriteTablesDbId,
                 conf.appwriteTableId,
-                [query.equal("status", "active")]
+                queries
+                // [query.equal("status", "active")]
             )
 
         } catch (error) {
